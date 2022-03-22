@@ -1,4 +1,4 @@
-import win32gui, win32con, win32api, os, pytz
+import win32gui, win32con, win32api, pytz
 from time import sleep
 from datetime import datetime
 VK_CODE = {'backspace':0x08,
@@ -185,7 +185,7 @@ while True:
             print('Obrigado por testar este programa!')
             #os.system("stop")
             input("Pressione enter para fechar...")
-            quit()
+            break
         else:
             print('Ocorreu algum erro', result_key_stroke)
     sleep(1)
